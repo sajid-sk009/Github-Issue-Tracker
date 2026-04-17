@@ -201,21 +201,6 @@ const displayIssueDetail = (details) => {
   document.getElementById("my_modal_5").showModal();
 };
 
-document.getElementById("search-btn").addEventListener("click", () => {
-  const searchValue = document.getElementById("input-text").value.trim().toLowerCase() || '';
 
-  fetch(
-    `https://phi-lab-server.vercel.app/api/v1/lab/issues/search?q=${searchValue}`,
-  )
-    .then((res) => res.json())
-    .then((json) => {
-      const allData = json.data;
-      const filterData = allData.filter((word) =>
-        word.title.toLowerCase().includes(searchValue),
-      );
-
-      displayAllIssue(filterData);
-    });
-});
 
 loadAllIssue("all");
