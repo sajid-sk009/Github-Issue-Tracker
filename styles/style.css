@@ -1,0 +1,43 @@
+.geist-font {
+  font-family: "Geist", sans-serif;
+}
+
+.active {
+  padding: 8px 12px;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  background-color: #4A00FF;
+  border-radius: 4px;
+  border: 1px solid #4A00FF;
+  width: 80px;
+}
+
+@media (min-width: 1024px) {
+  .active {
+    font-size: 16px;
+  }
+}
+
+.inactive {
+  padding: 8px 12px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #64748B;
+  border-radius: 4px;
+  border: 1px solid #E4E4E7;
+  width: 80px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+@media (min-width: 1024px) {
+  .inactive {
+    font-size: 16px;
+  }
+}
+
+.inactive:hover {
+  color: white;
+  background-color: #4A00FF;
+}
